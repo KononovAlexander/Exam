@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700');
+@import 'normalize';
+@import 'mixins';
+
+
+
+*{
+	box-sizing: border-box;}
+html{
+	font-size: 10px;
+	height: 100%;
+}
+//fonts
+$text-font:'Josefin Sans' sans-serif;
+$text-btn:'Aleo' serif;
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family:$text-font;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	color:#fff;
+	// min-height: 100%;
+	// width: 1770px;
+	.container{
+
+   outline: 1px black solid;
+		height: 100%;
+		width: 66%;
+		margin: 0 auto;
+		
+
+	}
+
+
+.logo {
+	background-image: url(../img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:center ;
+	display: inline-block;
+	@include tr(.4s)
+	&:hover,
+	&:focus,
+	&:active{
+		transform:scale(1.1);
+
+		
+	}
+
+
+
+
+}
+.btn{
+	 font-size: 1.8rem;
+		width: 260px;
+		height: 50px;
+		text-transform: uppercase;
+		 background-size: 100% auto;
+		background-image: linear-gradient(30deg,#496bfe 0% 40%,  #5474fd 40% 100% );
+		color:#fff;
+
+		&__link{
+			display: flex;
+		align-items: center;
+		justify-content: center;
+			width: 100%;
+			height: 100%;
+	text-decoration: none;
+	color:#fff;
+         }
+		@include tr(.4s);
+		&:hover,
+		&:focus,
+		&:active,{
+			background-size: 300%;
+			box-shadow:  0 0 0 0 #496bfe inset,
+               0 0 3px 1px #000 inset;
+		}
+
+
+
+}
+}
+
+
+.head{
+	
+
+	position: relative;
+	font-family:'Josefin Sans' sans-serif;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height:620px ;	
+	background-image: url(../img/head_image.png);
+	background-position: center;
+	background-size:cover ;
+	background-repeat: no-repeat;
+	text-align: center; 
+	&__container{		
+		padding-top: 7%;
+	}
+	&__logo{
+		// outline: 1px orange solid;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		font-size: 2.5rem;
+		color: #fff;
+		margin-left: 17%;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover,
+		&:focus,
+		&:active{
+		color:#000;
+
+		}
+	}
+		
+	&__title{
+		// outline: 1px green solid;
+	font-family:$text-font;
+	font-size: bold;
+		font-size:4rem;
+		// margin:0 15%  ;
+	}
+	&__subtitle{
+		// outline: 1px red solid;
+		font-size: 200;
+	}
+	&__search-form{
+
+		
+		height: 7%;
+		width: 40%;
+		background-color: #fff;
+		@include my_pos(50%,50%,);
+		
+	}
+	&__form{
+		justify-content: space-around;
+   display: flex;
+  align-items: center;
+   padding: 0;
+   margin: 0;
+		height: 100%;
+	}
+
+	&__enter{
+		color:#999999;
+		font-size: 1.2rem	;
+		width: 70%;
+		margin:0 2px ;  
+		text-align: center;
+		border: none;
+		letter-spacing: 2px;
+		outline: none;
+	}
+	&__look{
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+		// display: inline-block;
+		background-color: #5474fd;
+			height: 95%;
+		width: 28%;
+			margin: 1px 0;
+			border:1px  #fff solid;
+
+		color:#fff;
+		text-transform: uppercase;
+		@include tr(.4s)
+		&--btn{
+			font-family: $text-btn;
+
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: #fff;
+				color: #5474fd;
+				border:2px  #5474fd solid;
+			}
+	
+
+		}
+		// &:after{
+		// 	 content: "";
+		// 	 height: 20px;
+		// 	 width: 20px;
+		// 	 background-image: url(../img/look.jpg);
+             
+		// }
+	}
+	&__search{
+		font-size: 2rem;
+		font-weight: 100;
+		margin: 4%;
+	}
+		&__scroll-box{
+			// outline: 1px green solid;
+			width: 90px;
+			height: 40px;
+      display: inline-block;
+			@include my_pos(70%,50%);
+		}	
+		&__arrow-link{
+			text-decoration: none;
+			color:#fff;
+			width: 100%;
+			height: 100%;
+
+
+
+		}
+	
+	&__nav{
+		display: flex;
+		align-items: center;
+		height: 10%;
+		font-size: 1.3rem;
+		font-family: $text-btn;
+		text-transform: uppercase;
+		background-color: #5474fd;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	&__logo{
+		outline: 1px green solid;
+		font-size: 1rem;
+		margin:1.5% 17%;
+		width: 15%;
+		height: 40%;
+	}
+	&__list{
+		padding-left: 0;
+		font-family: $text-btn;
+
+		width: 40%;
+		margin-left: 45%;
+
+	}
+	&__item{
+		display: inline-block;
+		padding: 2.5% ;
+	}
+	&__link{
+		margin: 4px 0;
+		padding:  4px;
+		text-decoration: none;
+		@include tr(.3s)
+		color:#fff;
+		&:hover,
+			&:focus,
+			&:active{
+				background-color: #fff;
+				color: #5474fd;
+				border-radius: 5px;
+
+			}
+	}
+
+	
+}
+
+.menu{
+	font-size: 0;
+	position: relative;
+	height:820px;
+	width: 100%;
+background-image: url(../img/bg2.png);
+// background-position:center;
+// background-size:contain; 
+background-repeat: no-repeat;
+&__container{
+	outline: 1px black solid;
+
+
+}
+&__text{
+
+	outline: 1px red solid;
+	padding-top: 20%;
+	// display: inline-block;
+	width: 55%;
+	height: 50%;
+}
+
+&__title{
+	outline: 1px green solid;
+	font-size: 2.4rem;
+	font-family: $text-btn;
+	color:#afafaf;
+	
+}
+&__sent{
+	font-family: $text-font;
+	color:#999999;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	line-height: 2rem;
+	
+
+}
+&__pct{
+	outline: 1px red solid;
+		width: 21%;
+		height: 22%;
+	background-size: cover;
+	background-position:center;
+
+		
+	
+	
+	&--waterhouse{
+	
+	@include my_pos(25%,71%,-73%,-48%);
+	background-image: url(../img/water_house.png);
+
+	
+	}
+	
+	&--mount{
+		@include my_pos(25%,75%,-63%,55%);
+		background-image: url(../img/mount.png);
+	
+
+
+		
+	}
+	}
+&__btn{
+	@include my_pos(60%,30%, -58%,-50%);
+
+	}
+
+
+
+&__img{
+
+	height: 220px;
+	width: 355px;
+}
+&__icons{
+	// outline: 1px green solid;
+	display: flex;
+  padding:  0 25% ;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height:25%;
+	background-color: #333333;
+	align-items: center;
+	justify-content: space-between;
+  	&::before,
+  	&::after{
+  		content:"";
+		border-top: 1px #656565 dotted;
+		display: inline-block;
+		height: 58%;
+		width:19% ;
+		border-radius:70% 70% ;
+	}
+	&::before{
+		@include my_pos(46%, 39.5%)
+
+	}
+	&::after{
+		@include my_pos(46%, 60%)
+
+	}
+
+}
+
+
+	
+
+&__icon{
+	// outline: 1px red solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// height: 40px;
+	// width: 40px;
+
+}
+&__string{
+	font-size: 2.2rem;
+	font-family: $text-btn;
+	color:#afafaf;
+}
+&__shcut{
+  // display: inline-block;
+  font-size: 4rem;
+	height: 40px;	
+	width: 40px;
+	font-weight:thin;
+	&--look{
+  color:#5474fd;		
+	}
+	&--check{
+		color:#ff6363;
+	}
+&--well{
+		color:#00a2ff;
+
+}
+}
+}
+
+
+
+
+.place{
+	font-size: 0;
+
+	// position: relative;
+	width: 100%;
+	height: 1100px;
+	&__container{
+		position: relative;
+		// padding-top: 10% ;
+
+	}
+
+
+&__tomove{
+
+	outline: 1px orange solid;
+	width: 100%;
+	height: 50%;
+	background-position:center ;
+	background-repeat: no-repeat;
+	&--hotel{
+		background-image: url(../img/bg3.png);
+	}
+	&--nature{
+		background-image: url(../img/bg4.png);
+	}
+}
+&__discr{
+	font-size: 1.6rem;
+	display: inline-block;
+	padding: 2%;
+	height: 48%;
+	width: 48%;
+	background-color: #2f292a;
+	opacity: .9;
+	&--house{
+		@include my_pos(60%,24%);
+	}
+	&--clifs{
+		@include my_pos(60%,76%);		
+	}
+
+}
+&__btn{
+	margin: 2% 0;
+	// opacity: 1.2;
+	
+	// width: 230px;
+	// height: 60px;
+	// background-color: #496bfe;
+
+}
+}
+.tour{
+	font-size: 0;
+	width: 100%;
+	height: 600px;
+	background-color: #232323;
+	// text-align: center;
+	background-position:center ;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/bg_tuorist.png);
+	&__container{
+		text-align: center;
+
+	}
+&__title{
+	font-size: 4rem;
+	font-family: $text-btn;
+	margin: 0 auto;
+	padding:2% 0;
+}
+
+
+&__person{
+		display: flex;
+		padding: 0;
+    // align-content: start;
+		width: 100%;
+		height: 40%;
+		margin: 20% 0;
+	background-color: #333333;
+}
+&__box{
+		outline: 1px blue solid;
+		vertical-align: bottom;
+		text-align: left ;
+		align-items: baseline;
+		padding:0 4%;
+	// display: flex;
+  // align-items: center;
+
+	width: 60%;
+}
+&__subtitle{
+	outline: 1px orange solid;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	// height: 20%;
+	// width: auto;
+	display: inline-block;
+}
+&__spech{
+	outline: 1px green solid;
+	display: inline-block;
+	overflow: hidden;
+	// text-align:left;
+
+	font-size: 1.4rem;
+	padding: 0;
+	margin: 0;
+	color:#7b7b7b;
+
+	height: 40%;
+	width: 90%;
+// 	&:before {
+//       content: "\f10d";
+//      font-family:Font Awesome 5 Pro;
+// // position: absolute;
+// // left: 20px;
+// // top: 20px;
+// color: blue;
+// // background: #FB6652;
+// width: 50px;
+// height: 50px;
+// // border-radius: 50%;
+// font-size: 4rem;
+// // line-height: 1.35;
+// // text-align: center;
+// }
+}
+&__quot{
+	// display: inline-block;
+	color:#496bfe;
+	padding: 0 2%;
+
+}
+&__pct{
+
+	outline: 1px red solid;
+	display: inline-block;
+   margin: 0 ;
+   padding: 0;
+	width:40% ;
+	height:100% ;
+	background-image: url(../img/tuorist.png);
+	background-position:center;
+	background-size: cover;
+}
+}
+.foot{
+ outline: 1px green solid;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+ // display: inline-block;
+ // vertical-align: baseline;;
+
+	padding-top: 5% ;
+	text-align: center;
+	width: 100%;
+	height:300px;
+	background-color: #232323;
+	&__logo{
+		// float:top;
+		// text-align: right;
+		// display: inline-block;	
+		
+		font-size: 1rem;
+		outline: 1px orange solid;
+		width:100px;
+		height: 30px;
+		padding: 1% 0;
+	}
+	&__slogan{
+		// display: inline-block;
+		
+		font-family: $text-font;
+		outline: 1px green solid;
+		max-height: 8vh;
+		max-width: 20%;
+		padding: 0.5% 0;
+		overflow: hidden;
+
+	}
+	&__icons{
+		// outline: 1px blue solid;
+		display: inline-block;
+		width: 15%;
+		padding: 1% 0;
+
+	text-decoration: none;
+	padding-left: 0;
+	}
+	&__icon{
+
+		// outline: 1px red solid;
+
+		height: 20px;
+		width: 20px;
+		margin:0 2% ;
+		display: inline-block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		&--face{
+			// background-image: url(../img/svg/face.svg);
+		}
+		&--tw{
+			// background-image: url(../img/svg/tw.svg);
+		}
+		&--in{
+			color:#5474fd;
+			// background-image: url(../img/svg/in.svg);
+		}
+		&--you{
+			// background-image: url(../img/svg/yout.svg);
+		}
+		&--unk{
+			// background-image: url(../img/svg/some_icon.svg);
+		}
+	}
+
+}
