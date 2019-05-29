@@ -328,55 +328,57 @@ body {
     height: 100%;
     width: 66%;
     margin: 0 auto; }
-  body .logo {
-    background-image: url(../img/svg/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    display: inline-block;
-    -webkit-transition: 0.4s 0.5s linear;
-    -o-transition: 0.4s 0.5s linear;
-    transition: 0.4s 0.5s linear; }
-    body .logo:hover, body .logo:focus, body .logo:active {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      transform: scale(1.1); }
-  body .btn {
-    font-family: "Aleo", serif;
-    font-size: 1.6rem;
-    width: 200px;
-    height: 45px;
-    text-transform: uppercase;
-    background-size: 100% auto;
-    background-image: -o-linear-gradient(60deg, #496bfe 0% 40%, #5474fd 40% 100%);
-    background-image: linear-gradient(30deg, #496bfe 0% 40%, #5474fd 40% 100%);
-    color: #fff;
-    -webkit-transition: 0.4s 0.5s linear;
-    -o-transition: 0.4s 0.5s linear;
-    transition: 0.4s 0.5s linear; }
-    body .btn__link {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      color: #fff; }
-    body .btn:hover, body .btn:focus, body .btn:active {
-      background-size: 310%;
-      -webkit-box-shadow: 0 0 0 0 #496bfe inset, 0 0 3px 1px #000 inset;
-      box-shadow: 0 0 0 0 #496bfe inset, 0 0 3px 1px #000 inset; }
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  -webkit-transition: 0.4s 0.5s linear;
+  -o-transition: 0.4s 0.5s linear;
+  transition: 0.4s 0.5s linear; }
+  .logo:hover, .logo:focus, .logo:active {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.btn {
+  font-family: "Aleo", serif;
+  font-size: 1.6rem;
+  width: 200px;
+  height: 45px;
+  text-transform: uppercase;
+  background-size: 100% auto;
+  background-image: -o-linear-gradient(60deg, #496bfe 0% 40%, #5474fd 40% 100%);
+  background-image: linear-gradient(30deg, #496bfe 0% 40%, #5474fd 40% 100%);
+  color: #fff;
+  -webkit-transition: 0.4s 0.5s linear;
+  -o-transition: 0.4s 0.5s linear;
+  transition: 0.4s 0.5s linear; }
+  .btn:hover, .btn:focus, .btn:active {
+    background-size: 310%;
+    -webkit-box-shadow: 0 0 0 0 #496bfe inset, 0 0 3px 1px #000 inset;
+    box-shadow: 0 0 0 0 #496bfe inset, 0 0 3px 1px #000 inset; }
+  .btn__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff; }
 
 .head {
   position: relative;
-  font-family: 'Josefin Sans' sans-serif;
+  font-family: 'Josefin Sans'sans-serif;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -457,7 +459,7 @@ body {
     height: 95%;
     width: 28%;
     margin: 1px 0;
-    border: 1px  #fff solid;
+    border: 1px #fff solid;
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: 0.4s 0.5s linear;
@@ -471,7 +473,7 @@ body {
       .head__look--btn:hover, .head__look--btn:focus, .head__look--btn:active {
         background-color: #fff;
         color: #5474fd;
-        border: 2px  #5474fd solid; }
+        border: 2px #5474fd solid; }
   .head__search {
     font-size: 2rem;
     margin: 2%; }
@@ -836,8 +838,8 @@ body {
     .foot__icon--in {
       color: #5474fd; }
     .foot__icon:hover {
-      -webkit-box-shadow: 0px 0px 4px  1px #fff;
-      box-shadow: 0px 0px 4px  1px #fff;
+      -webkit-box-shadow: 0px 0px 4px 1px #fff;
+      box-shadow: 0px 0px 4px 1px #fff;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
